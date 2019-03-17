@@ -19,6 +19,11 @@
     <h4>Deletings Elements</h4>
     <p id="delete"></p>
 
+    <h4>Merging (Concatenating) Arrays</h4>
+    <p id="concatenating"></p>
+
+
+
 
     <script type="text/javascript">
 
@@ -27,6 +32,7 @@
       document.getElementById("demo").innerHTML =  cars.toString();
 
       var fruits = ["Banana","Orange","Apple","Mango"]
+
 
 
 
@@ -45,7 +51,8 @@
       document.getElementById("changing").innerHTML = fruits.join(" >> ")
       delete fruits[0]; // Changes the first element in fruits array to undefined
       document.getElementById("delete").innerHTML = fruits.join(" ")
-
+      var integrated = cars.concat(fruits); // this code line provides that two of arrays integrated as one array upon the variable
+      document.getElementById("concatenating").innerHTML = integrated.join(" ")
     </script>
   </body>
 </html>
