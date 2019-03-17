@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Function in javascript</title>
+  </head>
+  <body>
+
+    <h2>javascript Functions</h2>
+
+    <p>This Example calls a funtion which performs a calculation,and returns the result:</p>
+
+    <p id="demo"></p>
+
+    <h1 id="trial"></h2>
+
+    <p id="test"></p>
+
+    <script type="text/javascript">
+
+      function getname()
+      {var name =prompt("Adınızı Giriniz")
+      return name}
+
+      function selamver(){
+      var deger = prompt("Bir Değer Giriniz")
+      return deger
+      alert(deger)}
+
+      function myFunction(a, b) {
+        return a * b
+      }
+
+      var x = myFunction(4, 3);
+      document.getElementById("demo").innerHTML = x ;
+      var y = selamver()
+      document.getElementById("trial").innerHTML = y ;
+      if(x==y)
+        {document.getElementById("trial").innerHTML ="değerlisin &nbsp;" + getname()}
+        else
+        {document.getElementById("trial").innerHTML="değersizsin &nbsp;  " + getname()}
+    </script>
+  </body>
+</html>
