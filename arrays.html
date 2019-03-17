@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+
+    <h2>Java Script Arrays Functions</h2>
+
+    <p id="demo"></p>
+    <p id="trailer"></p>
+    <p id="last"></p>
+    <p id="push"></p>
+    <p id="up-to-date"></p>
+
+    <h4>Changing Elements</h4>
+    <p id="changing"></p>
+
+    <h4>Deletings Elements</h4>
+    <p id="delete"></p>
+
+
+    <script type="text/javascript">
+
+      var cars = ["Mercedes","BMW","Honda","Tesla"]
+
+      document.getElementById("demo").innerHTML =  cars.toString();
+
+      var fruits = ["Banana","Orange","Apple","Mango"]
+
+
+
+      document.getElementById("demo").innerHTML =  fruits.join(" ");
+      document.getElementById("trailer").innerHTML =  fruits.pop(); // Removes the last element ("Mango" from named fruits Array)
+      document.getElementById("last").innerHTML = fruits.join("-")
+
+      fruits.push("Kiwi"); // Adds a new element ("Kiwi") to fruits array
+      document.getElementById("push").innerHTML = fruits.join(" ** ")
+
+      fruits.shift(); // Removes the first element from an array
+
+      fruits.unshift("Cherry"); // Adds a new element to an array (at the beginning)
+      document.getElementById("up-to-date").innerHTML = "Eleman sayısı:   " + fruits.length + " " + fruits.join(" ")
+      fruits[0] ="Banana"; // Changes the first element of an array to "Banana"
+      document.getElementById("changing").innerHTML = fruits.join(" >> ")
+      delete fruits[0]; // Changes the first element in fruits array to undefined
+      document.getElementById("delete").innerHTML = fruits.join(" ")
+
+    </script>
+  </body>
+</html>
