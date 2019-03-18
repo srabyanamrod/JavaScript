@@ -34,6 +34,10 @@ alert(isimelemanlari[0].value);
     var p2  = document.getElementById("p2")
 
     div1.insertBefore(baslik,p2)
+    
+    // How to delete a child object
+    alert("P2 Siliniyor")
+    div1.removeChild(p2);
 
 
 
